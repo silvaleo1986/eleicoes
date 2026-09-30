@@ -1,0 +1,4 @@
+export type Role='admin'|'polo_manager'|'zone_manager'|'worker'|'external'
+export type Profile={id:string;full_name:string|null;role:Role;polo:string|null;zone:string|null;cpf:string|null;registration:string|null;active:boolean}
+export type RouteRow={id:string;polo:string|null;zone:string|null;route_code:string|null;municipalities:string|null;urns:number|null;operation_date:string|null;vehicle:string|null;plate:string|null;driver:string|null;driver_cpf:string|null;driver_phone:string|null;cnh:string|null;supplier:string|null;collaborator:string|null;collaborator_cpf:string|null;collaborator_phone:string|null;situation:string|null;situation_manual:boolean;driver_registration:string|null;collaborator_registration:string|null;created_at:string;updated_at:string}
+export type MissionEvent={id:string;route_id:string;event_type:'started'|'stop'|'completed';section:string|null;urns_quantity:number|null;created_at:string;created_by:string}
